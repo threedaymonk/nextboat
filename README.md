@@ -15,10 +15,13 @@ You'll need a reasonably recent version of Ruby and Bundler.
 
 ### Start a server:
 
-    $ STOP_POINT=930GGLP bundle exec ruby server.rb
+    $ STOP_POINT=930GGLP TFL_APP_ID=? TFL_KEY=? bundle exec ruby server.rb
 
 This will give you times for Greenland Pier. For anywhere else, refer to the
 [StopPoint Search on the TfL API](https://api.tfl.gov.uk/swagger/ui/index.html?url=/swagger/docs/v1#!/StopPoint/StopPoint_Search)
+
+You can get a key and app ID by
+[registering with TfL](https://api-portal.tfl.gov.uk/).
 
 ### Turn off the Kindle screensaver:
 
