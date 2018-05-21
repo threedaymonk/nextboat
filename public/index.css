@@ -1,0 +1,36 @@
+* {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  padding: 24px;
+}
+
+#departures {
+  font-size: 48px;
+  line-height: 64px;
+}
+
+.departure.unreachable {
+  color: #888;
+}
+
+.destination {
+  width: 85%;
+  float: left;
+}
+
+.timeLeft {
+  text-align: right;
+  width: 15%;
+  float: left;
+}
+
+#footer {
+  font-size: 24px;
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+}
