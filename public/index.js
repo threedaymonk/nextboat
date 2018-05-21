@@ -2,7 +2,6 @@ var POLL_INTERVAL = 5 * 60 * 1000; // ms
 var RENDER_INTERVAL = 2000; // ms
 var SCREEN_REFRESH_INTERVAL = 10 * 60 * 1000; // ms
 
-var STOP_POINT = '930GGLP';
 var WALK_TIME = 10; // minutes
 
 var departures = [];
@@ -33,7 +32,7 @@ var poll = function() {
       process(json);
     }
   };
-  req.open('GET', '/stop/' + STOP_POINT + '/arrivals');
+  req.open('GET', '/arrivals');
   req.send();
 };
 
