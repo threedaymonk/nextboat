@@ -40,3 +40,8 @@ You need only do this once.
 3. Select _launch browser_
 4. Choose any bookmark, then enter the address of your server, e.g.
    `http://192.168.1.10:4567/`
+
+## Limitations
+
+The code assumes that you, like me, live slightly less than ten minutes' walk
+from the pier. This is hard coded as `WALK_TIME` in `index.js`.
