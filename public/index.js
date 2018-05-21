@@ -1,11 +1,13 @@
 var POLL_INTERVAL = 5 * 60 * 1000; // ms
 var RENDER_INTERVAL = 2000; // ms
+var SCREEN_REFRESH_INTERVAL = 10 * 60 * 1000; // ms
 
 var STOP_POINT = '930GGLP';
 var WALK_TIME = 10; // minutes
 
 var departures = [];
 var lastUpdatedAt;
+var lastScreenRefresh = new Date();
 
 function Departure(rawData) {
   this.destination = rawData['destinationName'];
@@ -60,6 +62,19 @@ var render = function() {
     var updatedAgo = Math.floor((new Date() - lastUpdatedAt) / 60000);
     document.getElementById('lastUpdate').innerText = 'Updated ' + updatedAgo + 'm ago';
   }
+  if ((new Date() - lastScreenRefresh) > SCREEN_REFRESH_INTERVAL) {
+    lastScreenRefresh = new Date();
+    invertVideo();
+  }
+}
+
+var invertVideo = function() {
+  document.body.className = 'inverted';
+  setTimeout(uninvertVideo, 50);
+}
+
+var uninvertVideo = function() {
+  document.body.className = '';
 }
 
 window.onload = function() {

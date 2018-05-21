@@ -6,6 +6,13 @@
 
 body {
   padding: 24px;
+  background-color: white;
+  color: black;
+}
+
+body.inverted {
+  background-color: black;
+  color: white;
 }
 
 #departures {
@@ -14,7 +21,7 @@ body {
 }
 
 .departure.unreachable {
-  color: #888;
+  opacity: 0.5;
 }
 
 .destination {
