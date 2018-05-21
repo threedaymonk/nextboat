@@ -3,6 +3,8 @@
 Turns a dusty old Kindle into an e-ink information screen displaying the next
 Thames Clipper boat.
 
+![nextboat](https://user-images.githubusercontent.com/17347/40322505-86650c5a-5d2a-11e8-97ee-3febf5fa3a5b.jpg)
+
 ## Steps
 
 ### Install prerequisites
